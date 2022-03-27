@@ -1,6 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q10MostCharString from './components/Q10MostCharString';
 
 const App: React.FC = () => {
     return (
@@ -89,7 +90,9 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10MostCharString text1="vinicius" text2="portugal" />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
