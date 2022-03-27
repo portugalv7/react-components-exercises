@@ -2,6 +2,7 @@ import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q13ReplaceChar from './components/Q13ReplaceChar';
 
 const App: React.FC = () => {
     return (
@@ -130,7 +131,9 @@ const App: React.FC = () => {
                 <br /> Prop 3: X
                 <br /> Retorno: BXnXnX
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q13ReplaceChar text="Vinicius" char="i" substitute="X" />
+            </div>
 
             <h2 className="fs-6">
                 14. Crie um componente que recebe uma string e retorna apenas a
